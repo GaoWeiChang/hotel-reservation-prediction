@@ -2,3 +2,4 @@ venv/
 mlruns/
 logs/
 HOTEL_RESERVATION_PREDICTION.egg-info/
+notebook/
