@@ -16,7 +16,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # copy all file from local folder to /app folder in container
 COPY . .
 
-# avoid pycache
+# installs the package in "editable" mode using setup.py 
+# and prevents pip from storing downloaded packages in cache
 RUN pip install --no-cache-dir -e .
 
 RUN python pipeline/training_pipeline.py
