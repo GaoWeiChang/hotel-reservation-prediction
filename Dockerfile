@@ -22,8 +22,8 @@ RUN pip install --no-cache-dir -e .
 
 RUN python pipeline/training_pipeline.py
 
-# use port 8080 for this container
-EXPOSE 8080
+# use port 5000 for this container
+EXPOSE 5000
 
 # run the app, when container run
 # ['python', 'application.py'] = python application.py
