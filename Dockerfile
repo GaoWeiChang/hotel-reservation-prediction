@@ -22,6 +22,7 @@ RUN pip install --no-cache-dir -e .
 
 RUN python pipeline/training_pipeline.py
 
+
 # use port 5000 for this container
 EXPOSE 5000
 
